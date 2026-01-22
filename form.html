@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+        
+<body>
+  <header>
+    <nav>
+      <a href="index.html">wróć na stronę główną</a>
+    </nav>
+  </header>
+      
+  <main>
+    <section>
+      <h1>Formularz</h1>
+      
+      <form>
+        <div>
+          <label for="firstName">Imię:
+            <input id="firstName" type="text" placeholder="Podaj swoje imię" required autofocus>
+          </label>
+        </div>
+
+        <div>
+          <label for="lastName">Nazwisko:
+            <input id="lastName" type="text" placeholder="Podaj swoje nazwisko" required>
+          </label>
+        </div>
+
+        <div>
+          <label for="email">Adres e-mail:
+            <input id="email" type="email" placeholder="example@example.com" required>
+          </label>
+        </div>
+
+        <div>
+          <label for="phoneNumber">Numer telefonu:
+            <input id="phoneNumber" type="tel" placeholder="123 456 789" maxlength="11" required>
+          </label>
+        </div>
+
+        <div>
+          <label for="messageType">Typ zgłoszenia:
+            <select id="messageType" name="messageType" required>
+              <option value="">Wybierz...</option>
+              <option value="question">Zadaję pytanie</option>
+              <option value="problem">Zgłaszam problem</option>
+              <option value="other">Inne</option>
+            </select>
+          </label>
+        </div>
+
+        <div>
+          <label for="message">Wpisz treść wiadomości:
+            <textarea
+              id="message"
+              rows="5"
+              cols="15"></textarea>
+          </label>
+        </div>
+
+        <div>
+          <label>
+            <input 
+              id="consent"
+              name="consent"
+              type="checkbox"
+              required>
+            Wyrażam zgodę na wszystko.
+          </label>
+        </div>
+
+        <div>
+          <input id="submitButton" type="submit" value="Wyślij">
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>ShoperUp 2025</footer>
+</body>
+</html>
